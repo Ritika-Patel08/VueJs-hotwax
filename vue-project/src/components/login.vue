@@ -26,7 +26,7 @@
       login() {
         console.log('Username:', this.username);
         console.log('Password:', this.password);
-
+        localStorage.setItem('token', response.data.token);
         this.username = '';
         this.password = '';
       }

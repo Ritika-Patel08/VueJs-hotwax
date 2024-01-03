@@ -28,11 +28,10 @@
     },
     methods: {
       register() {
-        // Perform registration logic here
-        // For simplicity, let's just log the entered data
         console.log('Username:', this.username);
         console.log('Email:', this.email);
         console.log('Password:', this.password);
+        localStorage.setItem('token', response.data.token);
   
         // Reset the form after processing
         this.username = '';

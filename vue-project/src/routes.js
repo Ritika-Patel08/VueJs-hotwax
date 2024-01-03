@@ -5,8 +5,8 @@ import { createWebHistory,createRouter } from 'vue-router';
 import Home from './components/home.vue'
 import Login from './components/login.vue'
 import Profile from './components/profile.vue'
-import PageNotFound from './components/pageNotFound.vue'
 import Register from './components/register.vue'
+import navWithDeadLink from './components/navWithDeadLink.vue'
 // Define your routes
 const routes = [
   {
@@ -30,10 +30,16 @@ const routes = [
     component: Register
   },
   {
-    path: '/:pathMatch(.*)*',
-    name: 'pageNotFound',
-    component: PageNotFound
+    path: '/nav',
+    name: 'Nav',
+    component: navWithDeadLink
   }
+  // },
+  // {
+  //   path: '/:pathMatch(.*)*',
+  //   name: 'pageNotFound',
+  //   component: PageNotFound
+  // }
 ];
 
 // Create the router instance

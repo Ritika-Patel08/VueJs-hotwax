@@ -1,9 +1,8 @@
 <template>
-
-<router-link to="/"> Home</router-link><br>
 <router-link to="/login">login</router-link><br>
 <router-link to="/profile">profile</router-link> <br>
-<router-link to="/register">Register</router-link> 
+<router-link to="/register">Register</router-link> <br><br><br>
+<router-link to="/nav">navbar</router-link> 
 <router-view></router-view>
 <!-- <Home/> -->
 </template>
